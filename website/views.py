@@ -4,8 +4,8 @@ from django.http import HttpResponse
 def hello_blog(request):
 	#return HttpResponse('BLOG')
 	lista = [
-		'Django', 'Python', 'Apache', 'Git', 'Html'
-		'Banco de Dados ', 'Linux ', 'Nginx'
+		'Django', 'Python', 'Apache', 'Git', 'Html',
+		'Banco de Dados ', 'Linux ', 'Nginx', 'PHP', 'CSS'
 	]
 	
 	valor1 = '1'
