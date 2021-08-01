@@ -50,6 +50,20 @@ li a:hover:not(.active) {
 </ul>
 <h1> -----------------------</h1>
 
+<ul>
+{% for item in post %}
+
+{% if item.title == 'Django' %}
+
+ <li><a class="active" href="#home">{{ item.title }} </a></li>
+{% else %}
+<li><a href="#news">{{ item.title }}</a></li>
+{% endif %}
+
+{% endfor %}
+
+</ul>
+
 
 </body>
 </html>
