@@ -4,8 +4,12 @@ from django.utils import timezone
 
 # Create your models here.
 class Post(models.Model):
-    author = models.CharField(max_length=80)
+    
     title = models.CharField(max_length=200)
     text = models.TextField()
+    author = models.CharField(max_length=80)
     created_date = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.title
     
